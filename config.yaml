@@ -1,0 +1,18 @@
+monitors:
+  - name: "Sample web page 1"
+    url: "https://example.com"
+    selector: "body"
+    selector_type: "css"
+  - name: "Sample web pages 2"
+    url: "https://example.org/news"
+    selector: "//div[@class='content']"
+    selector_type: "xpath"
+
+notify:
+  email:
+    smtp_server: "smtp.qq.com"
+    from_addr: "your_email@example.com"
+    to_addr: "receiver@example.com"
+    password_env: "EMAIL_PASSWORD"
+  bark:
+    device_key_env: "BARK_KEY"
